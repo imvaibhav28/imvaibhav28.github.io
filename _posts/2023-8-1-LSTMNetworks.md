@@ -1,7 +1,6 @@
 ---
 layout: post
 title: LSTM
-author: Vaibhav
 categories: AI
 math: true
 comment: true
