@@ -45,7 +45,7 @@ Below diagram for a single LSTM cell introduces few advances over the existing v
 ![LSTM]({{ site.url }}/assets/lstm/Screenshot 2023-07-29 at 06.41.15.png)
 
 
-[source](https://d2l.ai/chapter_recurrent-modern/lstm.html)
+[source](s://d2l.ai/chapter_recurrent-modern/lstm.html)
 
 
 Let's dive into each subpart of the cell.
@@ -55,7 +55,7 @@ Let's dive into each subpart of the cell.
 The purpose of this gate is to 'forget' or delete the irrelevant bit of the historical context which is no longer required. The forget gate computes a weighted sum of the previous state’s hidden layer and the current input and passes that through a sigmoid. This mask is then multiplied element-wise by the context vector to remove the information from context that is no longer required. Element-wise multiplication of two vectors represented by the operator , and sometimes called the Hadamard product is the vector of the same dimension as the two input vectors, where each element i is the product of element i in the two input vectors. The corresponding equation for the forget gate is as given below
 
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<math xmlns="https://www.w3.org/1998/Math/MathML" display="block">
   <semantics>
     <mtable displaystyle="true" columnalign="right" columnspacing="0em" rowspacing="3pt">
       <mtr>
@@ -134,7 +134,7 @@ The purpose of this gate is to 'forget' or delete the irrelevant bit of the hist
 </math>
 
 where 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="https:///www.w3.org/1998/Math/MathML">
   <semantics>
     <mrow>
       <msub>
@@ -183,7 +183,7 @@ where 
 </math>
 
 and
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="https:///www.w3.org/1998/Math/MathML">
   <semantics>
     <mrow>
       <msub>
@@ -233,7 +233,7 @@ and
 
 are weight parameters and 
 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="https:///www.w3.org/1998/Math/MathML">
   <semantics>
     <mrow>
       <msub>
@@ -318,7 +318,7 @@ Sources:
 
 [LSTM Simply Explained](https://databasecamp.de/en/ml/lstms)
 
-[How Backprop works](http://neuralnetworksanddeeplearning.com/chap2.html)
+[How Backprop works](https:///neuralnetworksanddeeplearning.com/chap2.html)
 
 [Arxiv Paper on LSTM](https://arxiv.org/pdf/1909.09586.pdf)
 
