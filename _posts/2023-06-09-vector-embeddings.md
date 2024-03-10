@@ -1,12 +1,10 @@
 ---
 layout: post
 title: A primer on Vector embeddings 
-subtitle: Constructing vector embedding from scratch
-cover-img: /assets/img/AdobeStock_292765771-1080x675.jpeg
-thumbnail-img: /assets/img/embedding.png
-share-img: /assets/img/path.jpg
+categories: AI
+author: Vaibhav
 tags: [NLP, machine-learning, vector-embeddings]
-mathjax: true
+math: true
 ---
 
 # A primer on Vector embeddings.
