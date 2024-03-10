@@ -1,15 +1,13 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A little bit about me.
 ---
 
-My name is Vaibhav Upadhyay. I have the following qualities:
+👋 Hello there! Welcome to my corner of the digital universe! I'm Vaibhav Upadhyay, a passionate human being who loves to explore the endless possibilities of technology. I am going to ramble about just anything here. Bear with me.
 
-- I rock a bad haircut.
-- I'm extremely loyal to my family and friends
 
-What else do you need?
+
 
 ### My story
 
