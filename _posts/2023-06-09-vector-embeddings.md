@@ -2,7 +2,6 @@
 layout: post
 title: A primer on Vector embeddings 
 categories: AI
-author: Vaibhav
 tags: [NLP, machine-learning, vector-embeddings]
 math: true
 ---
