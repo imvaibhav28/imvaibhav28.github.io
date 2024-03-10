@@ -8,8 +8,6 @@ tags: [machine-learning, Deep-learning, LSTM]
 ---
 
 # Why do we need LSTM?
-------
-
 1. RNNs, Although take past 'context' into consideration. They do suffer the problem of *Vanishing* or *Exploding* gradient problem. Simply put, the gradient is calculated in any neural network using `backpropogation` which computes the derivate of a network backpropogating through each layer of the network. In order to update the weight matrix we need to compute the derivative of *Loss* w.r.t. the **weight** .  Chain rule plays a key role in calculating derivative of  initial layer as the derivative of subsequent layers are multiplied in order to calculate the gradient. However, for considerably large networks, this creates a problem.As the activation function output the values compressed beteen 0 and 1 for example sigmoid function, as we back propogate the network, the value of gradient `d(sigmoid output) / d(affine output (WXt +bias))` could attai very small value close to 0 and when these values are multipled using chain rule, the the actual gradient for the inital layers become very small rendering the network stagnant in terms of weight updation. Check [Backpropogation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) for more.
 2. One more problem specifically with RNNs is that they are not able to preserve context for long sequences. As the length of input sequence grows, the 'context carrying' ability of RNNs takes a toll. Why you may ask? Well, the reason being that despite having access to the entire preceding sequence, the information encoded in hidden states tends to be fairly local, more relevant to the most recent parts of the input sequence and recent decisions. Yet distant information is critical to many language applications. Consider the following example in the context of language modeling. 
                         `The flights the airline was cancelling were full.`
@@ -20,7 +18,6 @@ Assigning a high probability to **was** following airline is straightforward sin
 ------------------------------------------------
 
 # What is LSTM?
-
 LSTM is an acronym for Long Short Term Memory networks which addresses and solves the above stated problem with RNNs.  
 
 LSTMs divide the context management problem into two subproblems: 
@@ -32,7 +29,6 @@ The key to solving both problems is to learn how to manage this context rather t
 ------------------------------------------------
 
 # Architecture:
-
 The gates in an LSTM share a common design pattern; each consists of a feedforward layer, followed by a sigmoid activation function, followed by a **pointwise** multiplication with the layer being gated. The choice of the sigmoid as the activation function arises from its tendency to push its outputs to either 0 or 1. Combining this with a pointwise multiplication has an effect similar to that of a binary mask. Values in the layer being gated that align with values near 1 in the mask are passed through nearly unchanged; values corresponding to lower values are essentially erased.
 
 An LSTM cell receives 3 inputs. X or input vector at time=t . A hidden vector h(t-1) along with a new context vector c(t-1) also sometimes referred to as cell state. With these 3 inputs, LSTM cell performs few operations discussed later in this post to perform transformations/updations of the cell state `C(t)` and `h(t)`  and produce output vector `O(t)`. For simplicity, let's keep in mind that `C(t)` is basically **Long Term Memory** of the network while `h(t)` is the **Short Term Memory**. Now the name LSTM is beginning to make sense.
