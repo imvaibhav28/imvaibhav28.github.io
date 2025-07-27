@@ -2,6 +2,8 @@
 layout: page
 title: About me
 subtitle: A little bit about me.
+icon: fas fa-user
+order: 1
 ---
 
 👋 Hello there! Welcome to my corner of the digital universe! I'm Vaibhav Upadhyay, a passionate human being who loves to explore the endless possibilities of technology. I am going to ramble about just anything here. Bear with me.

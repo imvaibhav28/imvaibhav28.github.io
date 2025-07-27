@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LSTM
-categories: AI
+categories: [AI]
 math: true
 comment: true
 tags: [machine-learning, Deep-learning, LSTM]
