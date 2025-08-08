@@ -18,4 +18,4 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 ### My space
 
-I write about stuff mostly to remember it. But you can check it out here if it interests you [my blogs](https://imvaibhav28.github.io/additional_pages/blog.html)
+I write about stuff mostly to remember it. But you can check it out here if it interests you [my blogs](https://imvaibhav28.github.io)
