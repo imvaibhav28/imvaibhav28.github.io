@@ -31,6 +31,7 @@ or discrete value. The idea was that, while individual features describe only a
 small part of the object, together they provide sufficiently powerful statistics
 about the object and its properties for the machine learnt model to act on. [^3]
 
+![vector]({{ site.url }}/assets/vector_primer/vector_representation.svg)
 ---
 
 ## What do we mean by word similarity?
