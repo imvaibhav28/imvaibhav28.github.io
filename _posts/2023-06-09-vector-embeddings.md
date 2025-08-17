@@ -303,7 +303,7 @@ is called **word2Vec**. Embeddings mathematically signify mapping of one space t
 Embeddings are short dense form numerical representations, so rather than relying on sparse form which takes V vocabulary size, embeddings are dense in nature with values ranging from positive to negative.
 
 
- Dense vectors may also do a better job of capturing synonymy.
+ Dense vectors may also do a better job of capturing `synonymy`.
 For example, in a sparse vector representation, dimensions for synonyms like car
 and automobile dimension are distinct and unrelated; sparse vectors may thus fail
 to capture the similarity between a word with car as a neighbor and a word with
