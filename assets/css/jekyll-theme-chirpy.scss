@@ -1,0 +1,22 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+/* Added as part of https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1319 */
+
+$max-lines: 15; // max lines of code to be scrolled
+
+.highlight {
+    overflow-y: auto;
+    max-height: $max-lines * 1em;
+}
+
+/* END Added as part of https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1319 */
+
